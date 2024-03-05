@@ -4,17 +4,17 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 
 /// <summary>
-///  Класс WeatherStateMachine
-///  Основной класс погодной системы.
-///  Содержит состояния погоды и изменяет их.
+///  РљР»Р°СЃСЃ WeatherStateMachine
+///  РћСЃРЅРѕРІРЅРѕР№ РєР»Р°СЃСЃ РїРѕРіРѕРґРЅРѕР№ СЃРёСЃС‚РµРјС‹.
+///  РЎРѕРґРµСЂР¶РёС‚ СЃРѕСЃС‚РѕСЏРЅРёСЏ РїРѕРіРѕРґС‹ Рё РёР·РјРµРЅСЏРµС‚ РёС….
 /// </summary>
 
 public class WeatherStateMachine : MonoBehaviour
 {
-    [Header("Объекты погоды")]
+    [Header("ГЋГЎГєГҐГЄГІГ» ГЇГ®ГЈГ®Г¤Г»")]
     public WeatherView View;
 
-    [Header("Состояния")]
+    [Header("Г‘Г®Г±ГІГ®ГїГ­ГЁГї")]
     [SerializeField] private List<WeatherState> states;
     private List<WeatherState> currentStates;
     private Dictionary<WeatherType, WeatherState> statesDictionary = new Dictionary<WeatherType, WeatherState>();
