@@ -3,31 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-///  Класс WeatherView
-///  Содержит визуальные элементы погодной системы, которые могут изменяться.
-///  К ним относятся: скайбоксы, частицы (дождь, снег), источники света.
-///  Также этот класс отвечает за перемещение этих объектов вслед за игроком.
+///  РљР»Р°СЃСЃ WeatherView
+///  РЎРѕРґРµСЂР¶РёС‚ РІРёР·СѓР°Р»СЊРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ РїРѕРіРѕРґРЅРѕР№ СЃРёСЃС‚РµРјС‹, РєРѕС‚РѕСЂС‹Рµ РјРѕРіСѓС‚ РёР·РјРµРЅСЏС‚СЊСЃСЏ.
+///  Рљ РЅРёРј РѕС‚РЅРѕСЃСЏС‚СЃСЏ: СЃРєР°Р№Р±РѕРєСЃС‹, С‡Р°СЃС‚РёС†С‹ (РґРѕР¶РґСЊ, СЃРЅРµРі), РёСЃС‚РѕС‡РЅРёРєРё СЃРІРµС‚Р°.
+///  РўР°РєР¶Рµ СЌС‚РѕС‚ РєР»Р°СЃСЃ РѕС‚РІРµС‡Р°РµС‚ Р·Р° РїРµСЂРµРјРµС‰РµРЅРёРµ СЌС‚РёС… РѕР±СЉРµРєС‚РѕРІ РІСЃР»РµРґ Р·Р° РёРіСЂРѕРєРѕРј.
 /// </summary>
 
 public class WeatherView : MonoBehaviour
 {
-    // Объекты погоды
-    [Header("Скайбоксы")]
+    // ГЋГЎГєГҐГЄГІГ» ГЇГ®ГЈГ®Г¤Г»
+    [Header("Г‘ГЄГ Г©ГЎГ®ГЄГ±Г»")]
     public MeshRenderer CloudsSkybox;
     public GameObject FonCity;
 
-    [Header("Частицы")]
+    [Header("Г—Г Г±ГІГЁГ¶Г»")]
     public ParticleSystem RainParticles;
     public ParticleSystem SnowParticles;
 
-    [Header("Освещение")]
+    [Header("ГЋГ±ГўГҐГ№ГҐГ­ГЁГҐ")]
     public Light MainLight;
     public Light ZakatLight;
     public Light NightLight;
     public Light NightRoadLight;
     public Light SkyboxLight;
 
-    [Header("Для перемещения за игроком")]
+    [Header("Г„Г«Гї ГЇГҐГ°ГҐГ¬ГҐГ№ГҐГ­ГЁГї Г§Г  ГЁГЈГ°Г®ГЄГ®Г¬")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Transform lightsTransform;
     [SerializeField] private Transform skyboxesTransform;
