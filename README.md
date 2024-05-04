@@ -11,7 +11,7 @@
   Класс WeatherView хранит ссылки на объекты сцены, которые должны изменяться: скайбоксы, источники света, погодные частицы.
 
   **UML-диаграмма классов**
-  ![UML-диаграмма классов](https://github.com/slavker99/Weather-StateMachine/blob/main/WeatherStateMachine(1).drawio.png?raw=true)
+  ![UML-диаграмма классов](https://github.com/slavker99/Weather-StateMachine/blob/main/WeatherStateMachine(1).drawio.jpg?raw=true)
 
   ## Реализация
 
@@ -108,7 +108,7 @@
   **Смена погоды Вечер/Ночь**
   ![Смена погоды Вечер/Ночь](Night.gif)
 
-    **Смена погоды Солнечно/Дождь**
+  **Смена погоды Солнечно/Дождь**
   ![Смена погоды Вечер/Ночь](Rain.gif)
 
 
